@@ -43,4 +43,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ezambomsantana/pagamento-api-ci:${{ github.sha }}
+        tags: lucasbressanin/pagamento-api-ci:${{ github.sha }}
