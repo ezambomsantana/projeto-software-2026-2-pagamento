@@ -27,3 +27,20 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: "lucasbressanin"
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build and push
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: ezambomsantana/pagamento-api-ci:${{ github.sha }}
