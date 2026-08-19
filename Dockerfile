@@ -9,13 +9,13 @@ COPY mvnw .
 COPY .mvn .mvn
 
 # Download dependencies
-RUN ./mvnw dependency:resolve
+RUN mvn dependency:resolve
 
 # Copy source code
 COPY src src
 
 # Build application
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 # Runtime stage
 FROM eclipse-temurin:25-jre-alpine
