@@ -49,7 +49,7 @@ Remover o arquivo src/test/br.insper.pagameto.PagamentoApplicationTests
 
 O spring sempre adiciona esse arquivo quando o projeto é criado pelo Spring Initializr
 
-### Criar a classe de Teste
+## Criar a classe de Teste
 
 Criar o arquivo src/test/br.insper.pagamento.service.PagamentoServiceTest
 
@@ -71,7 +71,7 @@ public class PagamentoServiceTest {
 	
 ```
 
-### Adicionar o primeiro caso de teste 
+## Adicionar o primeiro caso de teste 
 
 ```
     @Test
