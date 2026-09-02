@@ -52,3 +52,4 @@ Thumbs.db
 .project
 .settings/
 .sts4-cache/
+tests/
