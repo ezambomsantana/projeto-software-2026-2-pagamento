@@ -35,6 +35,7 @@ application*.yaml
 .gradle/
 gradle/
 build/
+tests/
 
 # VS Code
 .vscode/
