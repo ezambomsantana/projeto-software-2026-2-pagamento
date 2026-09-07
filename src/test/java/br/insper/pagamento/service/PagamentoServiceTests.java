@@ -44,6 +44,8 @@ public class PagamentoServiceTests {
         Assertions.assertEquals(2, response.size());
     }
 
+
+
     @Test
     public void test_shouldCreatePaymentWhenTipoPagamentoIsPix() {
         // mocks
