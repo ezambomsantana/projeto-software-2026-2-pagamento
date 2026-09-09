@@ -57,7 +57,7 @@ public class PagamentoServiceTests {
 
         // asserts
         Assertions.assertTrue(op.isPresent());
-        Assertions.assertEquals("543", op.get().getChaveOrigem());
+        Assertions.assertEquals("123", op.get().getChaveOrigem());
         Assertions.assertEquals("234", op.get().getChaveDestino());
         Assertions.assertEquals(TipoPagamento.PIX, op.get().getTipo());
     }
