@@ -23,6 +23,7 @@ public class PagamentoController {
 	private PagamentoService pagamentoService;
 
 	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
 	public Pagamento criar(@RequestBody PagamentoDto dto) {
 		return pagamentoService.criar(dto);
 	}
