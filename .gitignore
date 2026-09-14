@@ -26,11 +26,6 @@ release.properties
 dependency-reduced-pom.xml
 .mvn/timing.properties
 
-# Spring Boot
-application*.properties
-application*.yml
-application*.yaml
-
 # Gradle
 .gradle/
 gradle/
